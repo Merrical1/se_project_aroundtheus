@@ -1,0 +1,217 @@
+.page {
+  background-color: black;
+  color: white;
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__section {
+  max-width: 880px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-top: 45px;
+  border-bottom: (84 84 84/ 0.7);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.profile__info {
+  display: grid;
+  grid-template-areas:
+    "title button"
+    "description description";
+  grid-template-columns: minmax(auto, 373px) auto;
+  column-gap: 20px;
+} 
+
+.profile__edit-button {
+  background: transparent url(../images/Edit\ button\(1\).svg) center no-repeat;
+  height: 24px;
+  width: 24px;
+  grid-area: button;
+  border: 1px solid white ;
+  cursor: pointer;
+  background-size: 10px 10px;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  transition: 0.3s;
+}
+
+.profile__edit-button:hover {
+  opacity: .6;
+
+}
+
+.proflie__add-button {
+  background: transparent url(../images/Add\ Button.svg) center no-repeat;
+  width: 150px;
+  height: 50px;
+  margin-left: auto;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.proflie__add-button:hover {
+  opacity: .6;
+
+}
+
+.profile__title{
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: 500;
+  grid-area: title;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 373px;
+  font-family: 'Inter', 'Arial', sans-serif;
+}
+
+.profile__description {
+  font-size: 18px;
+  line-height: 21.78px;
+  font-weight: 400;
+  grid-area: description;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 373px;
+  font-family: 'Inter', 'Arial', sans-serif;
+  
+
+}
+
+.profile__image {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+  margin-right: 24px;
+}
+
+
+.card__list {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(auto-fit, 282px);
+grid-gap: 20px 17px;
+padding: 0;
+margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Inter', 'Arial', sans-serif;
+}
+
+.cards {
+  /*fonts*/
+  margin-top: 30px;
+  padding: 15px 0 30px;
+}
+
+
+.card__image {
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+}
+
+.card__description {
+  display: flex;
+  background-color: white;
+  color: black;
+  padding: 25px 15px 31px 21px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29.05px;
+  max-width: 220px;
+}
+
+.card__like-button{
+  background: transparent url(../images/like-inactive.svg) center no-repeat;
+  width: 21px;
+  height: 18px;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.card__like-button:hover {
+  opacity: .5; 
+}
+
+@media screen and (max-width:480px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile__info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.profile__description {
+  width: 100%;
+  text-align: center; 
+}
+
+.proflie__add-button {
+  margin: 0;
+  width: 100%;
+
+}
+
+.header {
+  max-width: 320px;
+  width: 100%;
+  min-height: 56px;
+  padding-top: 28px;
+}
+
+}
+
+.footer {
+  color: #545454;
+  max-width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+  font-family: 'Inter', 'Arial', Sans-serif;;
+  margin-left: 200px;
+  margin-top: 139px;
+}
