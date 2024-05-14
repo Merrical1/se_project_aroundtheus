@@ -39,6 +39,7 @@
   margin-left: auto;
   border: 2px solid white;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .proflie__add-button:hover {
