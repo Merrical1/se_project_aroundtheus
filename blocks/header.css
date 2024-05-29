@@ -1,7 +1,5 @@
 .header {
- /* margin-top: 45px; */
   border-bottom: 1px solid rgba(84 84 84/ 0.7);
- /* padding-bottom: 40px; */
   display: flex;
   min-height: 120px;
   align-items: center;
@@ -10,9 +8,6 @@
 
 @media screen and (max-width:480px) {
 .header {
-  /*max-width: 320px;
-  padding-top: 28px;
-  margin-left: 27px;*/
   min-height: 85px;
   width: 100%;
 }
@@ -20,7 +15,7 @@
 .header__logo {
   width: 126px;
   height: 24px;
-  margin: 0 0 0 27px;
+  margin-left: 27px;
 }
 
 }
