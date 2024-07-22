@@ -13,6 +13,7 @@
   grid-gap: 7px 17px;
   align-items: baseline;
   justify-content: space-between;
+  flex-wrap: wrap;
 } 
 
 .profile__edit-button {
@@ -41,7 +42,7 @@
   margin-left: auto;
   border: 2px solid white;
   cursor: pointer;
-  border-radius: 2px;
+  /*border-radius: 2px;*/
 }
 
 .proflie__add-button:hover {
@@ -80,6 +81,8 @@
   object-fit: cover;
   background-position: center;
   margin-right: 24px;
+  height: 120px;
+  width: 120px;
 }
 
 @media screen and (max-width:480px) {
@@ -116,6 +119,7 @@
     width: 282px;
     margin-top: 36px;
     margin-left: 0;
+    height: 50px;
   }
 
   .profile__title {

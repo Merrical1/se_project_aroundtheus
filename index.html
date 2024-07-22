@@ -35,11 +35,15 @@
             ></button>
             <p class="profile__description">Explorer</p>
           </div>
-          <button type="button" class="profile__add-button"></button>
+          <button
+            type="button"
+            id="profile-add-button"
+            class="profile__add-button"
+          ></button>
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <li class="card">
+            <!-- <li class="card">
               <img
                 src="./images/yosemite-valley.png"
                 class="card__image"
@@ -104,7 +108,7 @@
                 <h2 class="card__title">Lago-di-Braies</h2>
                 <button type="button" class="card__like-button"></button>
               </div>
-            </li>
+            </li> -->
           </ul>
         </section>
       </main>
@@ -122,21 +126,57 @@
         <p class="modal__heading">Edit Profile</p>
         <form class="modal__form">
           <input
+            name="title"
             type="text"
             class="modal__input"
             id="profile-title-input"
             placeholder="Name"
           />
           <input
+            name="Description"
             type="text"
             class="modal__input"
             id="profile-description-input"
             placeholder="Description"
           />
-          <button class="button modal__button" type="submit">Save</button>
+          <button
+            class="button modal__button"
+            id="profile-edit-button"
+            type="submit"
+          >
+            Save
+          </button>
         </form>
       </div>
     </div>
+    <div class="modal" id="profile-add-modal">
+      <div class="modal__container">
+        <button
+          type="button"
+          class="modal__close"
+          id="profile-add-modal-close"
+        ></button>
+        <p class="modal__heading">Add Profile</p>
+        <form class="modal__form">
+          <button
+            type="submit"
+            id="profile-add-button"
+            class="modal__add-button"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+    <template id="card-template">
+      <li class="card">
+        <img src="" alt="" class="card__image" />
+        <div class="card__description">
+          <h2 class="card__title"></h2>
+          <button type="button" class="card__like-button"></button>
+        </div>
+      </li>
+    </template>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
