@@ -114,12 +114,26 @@
     </div>
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
-        <button class="modal__close" id="profile-edit-modal-close"></button>
+        <button
+          class="modal__close"
+          type="button"
+          id="profile-edit-modal-close"
+        ></button>
         <p class="modal__heading">Edit Profile</p>
         <form class="modal__form">
-          <input type="text" class="modal__input" placeholder="Name" />
-          <input type="text" class="modal__input" placeholder="Description" />
-          <button class="modal__button">Save</button>
+          <input
+            type="text"
+            class="modal__input"
+            id="profile-title-input"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            class="modal__input"
+            id="profile-description-input"
+            placeholder="Description"
+          />
+          <button class="button modal__button" type="submit">Save</button>
         </form>
       </div>
     </div>
